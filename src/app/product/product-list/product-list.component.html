@@ -1,0 +1,19 @@
+
+<nav>
+    <span>Product Shop</span>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Add Producr</a></li>
+    </ul>
+</nav>
+
+<ul>
+    <li *ngFor="let product of productList">
+        <div class="ligne">
+            {{product?._id}}
+            {{product?.label}}
+            {{product?.description}}
+            {{product?.price}}
+        </div>
+    </li>
+</ul>
